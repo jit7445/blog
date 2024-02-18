@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5eb1f5fa49.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body>
+
+    <div class="flex flex-row h-screen fixed ms-2 mt-2">
+        <div class="left bg-gray-800 text-white ">
+            
+            <nav  id="hamburger" class="hamburger relative flex flex-col w-64 rounded-md">
+                
+                <div class="flex flex-col items-center  mt-12 gap-2">
+                    <div class=" mx-4 flex items-center justify-center  w-full">
+
+                        <button
+                            class="bg-slate-700 hover:bg-slate-400 text-white px-4 py-2 rounded-md flex items-center w-full">
+                            <span>
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <span class="ml-2">Search</span>
+                        </button>
+
+                    </div>
+                    <div class=" mx-4 bg-gray-400 p-4 rounded-md w-full">
+                        <h1 class="text-white font-bold text-lg">jitender</h1>
+                    </div>
+                    <ul class="flex flex-col gap-4 mt-4 w-full">
+                        <li
+                            class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                            <a href="/" class="flex  text-white">
+                                <span><i class="fas fa-home"></i></span>
+                                <span class="ml-2">Home</span>
+                            </a>
+                        </li>
+                        <li
+                            class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                            <a href="/shorts" class="flex  text-white">
+                                <span><i class="fa-brands fa-youtube"></i></span>
+                                <span class="ml-2">Shorts</span>
+                            </a>
+                        </li>
+                        <li
+                            class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                            <a href="/blog/" class="flex  text-white">
+                                <span><i class="fa-solid fa-blog"></i></i></span>
+                                <span class="ml-2">Blogs</span>
+                            </a>
+                        </li>
+                        <li
+                            class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                            <a href="/contact" class="flex  text-white">
+                                <span><i class="fa-solid fa-phone"></i></span>
+                                <span class="ml-2">Contact</span>
+                            </a>
+                        </li>
+                        <li
+                            class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                            <a href="/about" class="flex  text-white">
+                                <span><i class="fa-solid  fa-address-card"></i></span>
+                                <span class="ml-2">About</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    <div class="flex flex-col  mt-4 w-full">
+                        <ul class="flex flex-col justify-between gap-2 w-full">
+                            <% if (locals.user) { %>
+                                <li class="p-2 mx-2 md:mx-4 rounded-md bg-blue-500 hover:bg-blue-400 transition duration-300 ease-in-out">
+                                    <a href="/user/logout">Logout</a>
+                                </li>
+                        
+                            <% } else { %>
+                             
+                           
+                            <li class="p-2 mx-2 md:mx-4 rounded-md bg-blue-500 hover:bg-blue-400 transition duration-300 ease-in-out">
+                                <a href="/user/signin">Login</a>
+                            </li>
+                            <li class="p-2 mx-2 md:mx-4 rounded-md bg-blue-500 hover:bg-blue-400 transition duration-300 ease-in-out">
+                                <a href="/user/signup">Sign</a>
+                            </li>
+
+                            <% } %>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="right w-full">
+
+            <header class="bg-stone-500 body-font rounded-md mx-2">
+                <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                    <button id="show" class="p-4 ">
+                        <i  class="fas fa-bars text-2xl"></i>
+                    </button>
+                    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                        <a class="mr-5 text-white hover:text-gray-900">New Blogs</a>
+                        <a class="mr-5 text-white hover:text-gray-900">Comedy</a>
+                        <a class="mr-5 text-white hover:text-gray-900">adventure</a>
+                        <a class="mr-5 text-white  focus-within:text font-serif hover:text-gray-900">love</a>
+                    </nav>
+                    <% if (locals.user) { %>
+                        <a
+                        class="flex title-font font-medium flex-col items-center text-gray-900 mb-4 md:mb-0 overflow-auto ">
+                        <img src="<%= user.profileImageURL %>" class="rounded-full h-12 w-12" alt="">
+                        <span class="overflow-hidden">
+                          <%= user.fullName %>
+                        </span>
+                    </a>
+                    <% } %>
+                    
+
+                </div>
+
+            </header>

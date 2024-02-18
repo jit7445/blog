@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5eb1f5fa49.js" crossorigin="anonymous"></script>
+    <link href="./public/src/output.css" rel="stylesheet">
+    <style>
+        
+@media (max-width:1200px){
+    #hamburger {
+        display: none;
+    }
+  
+  }
+  #hamburger-hide {
+    display:block;
+  } 
+ 
+    </style>
+</head>
+
+<body>
+   
+    <!-- <div class=" flex flex-row h-screen">
+        <div class=" absolute  left bg-gray-800 text-white mt-16 ">
+           
+            <nav  id="hamburger" class="relative flex flex-col w-64">
+                <div class="flex flex-col items-center  mt-12 gap-2">
+                    <div class=" mx-4 flex items-center justify-center  w-full">
+
+                        <button
+                            class="bg-slate-700 hover:bg-slate-400 text-white px-4 py-2 rounded-md flex items-center w-full">
+                            <span>
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <span class="ml-2">Search</span>
+                        </button>
+
+                    </div>
+                    <div class=" mx-4 bg-gray-400 p-4 rounded-md w-full">
+                        <h1 class="text-white font-bold text-lg">jitender</h1>
+                    </div>
+                    <ul class="flex flex-col gap-4 mt-4 w-full">
+                        <li
+                            class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                            <a href="/" class="flex  text-white">
+                                <span><i class="fas fa-home"></i></span>
+                                <span class="ml-2">Home</span>
+                            </a>
+                        </li>
+                        <li
+                            class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                            <a href="/shorts" class="flex  text-white">
+                                <span><i class="fa-brands fa-youtube"></i></span>
+                                <span class="ml-2">Shorts</span>
+                            </a>
+                        </li>
+                        <li
+                            class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                            <a href="/blog/" class="flex  text-white">
+                                <span><i class="fa-solid fa-blog"></i></i></span>
+                                <span class="ml-2">Blogs</span>
+                            </a>
+                        </li>
+                        <li
+                            class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                            <a href="/contact" class="flex  text-white">
+                                <span><i class="fa-solid fa-phone"></i></span>
+                                <span class="ml-2">Contact</span>
+                            </a>
+                        </li>
+                        <li
+                            class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                            <a href="/about" class="flex  text-white">
+                                <span><i class="fa-solid  fa-address-card"></i></span>
+                                <span class="ml-2">About</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                  
+                </div>
+            </nav>
+        </div>
+
+        <header class="bg-stone-500 body-font w-full rounded-md mx-2 h-12">
+            <button id="show" class="p-4 ">
+                <i  class="fas fa-bars text-2xl"></i>
+            </button>
+            <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                
+              
+              </a>
+              <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 text-white hover:text-gray-900">New Blogs</a>
+                <a class="mr-5 text-white hover:text-gray-900">Comedy</a>
+                <a class="mr-5 text-white hover:text-gray-900">adventure</a>
+                <a class="mr-5 text-white  focus-within:text font-serif hover:text-gray-900">love</a>
+              </nav>
+              
+            </div>
+          </header>
+  
+
+          <div class="flex flex-row h-screen">
+            <div class=" absolute  left bg-gray-800 text-white mt-16 w-32">
+                
+                <nav  id="hamburger" class="hamburger relative flex flex-col w-64">
+                    
+                    <div class="flex flex-col items-center  mt-12 gap-2">
+                        <div class=" mx-4 flex items-center justify-center  w-full">
+    
+                            <button
+                                class="bg-slate-700 hover:bg-slate-400 text-white px-4 py-2 rounded-md flex items-center w-full">
+                                <span>
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <span class="ml-2">Search</span>
+                            </button>
+    
+                        </div>
+                        <div class=" mx-4 bg-gray-400 p-4 rounded-md w-full">
+                            <h1 class="text-white font-bold text-lg">jitender</h1>
+                        </div>
+                        <ul class="flex flex-col gap-4 mt-4 w-full">
+                            <li
+                                class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                                <a href="/" class="flex  text-white">
+                                    <span><i class="fas fa-home"></i></span>
+                                    <span class="ml-2">Home</span>
+                                </a>
+                            </li>
+                            <li
+                                class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                                <a href="/shorts" class="flex  text-white">
+                                    <span><i class="fa-brands fa-youtube"></i></span>
+                                    <span class="ml-2">Shorts</span>
+                                </a>
+                            </li>
+                            <li
+                                class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                                <a href="/blog/" class="flex  text-white">
+                                    <span><i class="fa-solid fa-blog"></i></i></span>
+                                    <span class="ml-2">Blogs</span>
+                                </a>
+                            </li>
+                            <li
+                                class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                                <a href="/contact" class="flex  text-white">
+                                    <span><i class="fa-solid fa-phone"></i></span>
+                                    <span class="ml-2">Contact</span>
+                                </a>
+                            </li>
+                            <li
+                                class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                                <a href="/about" class="flex  text-white">
+                                    <span><i class="fa-solid  fa-address-card"></i></span>
+                                    <span class="ml-2">About</span>
+                                </a>
+                            </li>
+    
+    
+                        </ul>
+                        <div class="flex flex-col  mt-4 w-full">
+                            <ul class="flex flex-col justify-between gap-2 w-full">
+                                <% if (locals.user) { %>
+                                    <li class="p-2 mx-2 md:mx-4 rounded-md bg-blue-500 hover:bg-blue-400 transition duration-300 ease-in-out">
+                                        <a href="/user/logout">Logout</a>
+                                    </li>
+                            
+                                <% } else { %>
+                                 
+                               
+                                <li class="p-2 mx-2 md:mx-4 rounded-md bg-blue-500 hover:bg-blue-400 transition duration-300 ease-in-out">
+                                    <a href="/user/signin">Login</a>
+                                </li>
+                                <li class="p-2 mx-2 md:mx-4 rounded-md bg-blue-500 hover:bg-blue-400 transition duration-300 ease-in-out">
+                                    <a href="/user/signup">Sign</a>
+                                </li>
+    
+                                <% } %>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="right w-full">
+    
+                <header class="bg-stone-500 body-font rounded-md mx-2">
+                    <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                        <button id="show" class="p-4 ">
+                            <i  class="fas fa-bars text-2xl"></i>
+                        </button>
+                        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                            <a class="mr-5 text-white hover:text-gray-900">New Blogs</a>
+                            <a class="mr-5 text-white hover:text-gray-900">Comedy</a>
+                            <a class="mr-5 text-white hover:text-gray-900">adventure</a>
+                            <a class="mr-5 text-white  focus-within:text font-serif hover:text-gray-900">love</a>
+                        </nav>
+                        <% if (locals.user) { %>
+                            <a
+                            class="flex title-font font-medium flex-col items-center text-gray-900 mb-4 md:mb-0 overflow-auto ">
+                            <img src="<%= user.profileImageURL %>" class="rounded-full h-12 w-12" alt="">
+                            <span class="overflow-hidden">
+                              <%= user.fullName %>
+                            </span>
+                        </a>
+                        <% } %>
+                        
+    
+                    </div>
+    
+                </header> -->
+                <!-- <div class="flex flex-row h-screen">
+                    <div class=" absolute  left bg-gray-800 text-white mt-24 ms-4 rounded-md">
+                        
+                        <nav  id="hamburger" class="hamburger relative flex flex-col w-64">
+                            
+                            <div class="flex flex-col items-center  mt-12 gap-2">
+                                <div class=" mx-4 flex items-center justify-center  w-full">
+            
+                                    <button
+                                        class="bg-slate-700 hover:bg-slate-400 text-white px-4 py-2 rounded-md flex items-center w-full">
+                                        <span>
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                        <span class="ml-2">Search</span>
+                                    </button>
+            
+                                </div>
+                                <div class=" mx-4 bg-gray-400 p-4 rounded-md w-full">
+                                    <h1 class="text-white font-bold text-lg">jitender</h1>
+                                </div>
+                                <ul class="flex flex-col gap-4 mt-4 w-full">
+                                    <li
+                                        class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                                        <a href="/" class="flex  text-white">
+                                            <span><i class="fas fa-home"></i></span>
+                                            <span class="ml-2">Home</span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                                        <a href="/shorts" class="flex  text-white">
+                                            <span><i class="fa-brands fa-youtube"></i></span>
+                                            <span class="ml-2">Shorts</span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                                        <a href="/blog/" class="flex  text-white">
+                                            <span><i class="fa-solid fa-blog"></i></i></span>
+                                            <span class="ml-2">Blogs</span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                                        <a href="/contact" class="flex  text-white">
+                                            <span><i class="fa-solid fa-phone"></i></span>
+                                            <span class="ml-2">Contact</span>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="p-2 mx-4 rounded-md bg-slate-800 hover:bg-slate-500 transition duration-300 ease-in-out">
+                                        <a href="/about" class="flex  text-white">
+                                            <span><i class="fa-solid  fa-address-card"></i></span>
+                                            <span class="ml-2">About</span>
+                                        </a>
+                                    </li>
+            
+            
+                                </ul>
+                                <div class="flex flex-col  mt-4 w-full">
+                                    <ul class="flex flex-col justify-between gap-2 w-full">
+                                        <% if (locals.user) { %>
+                                            <li class="p-2 mx-2 md:mx-4 rounded-md bg-blue-500 hover:bg-blue-400 transition duration-300 ease-in-out">
+                                                <a href="/user/logout">Logout</a>
+                                            </li>
+                                    
+                                        <% } else { %>
+                                         
+                                       
+                                        <li class="p-2 mx-2 md:mx-4 rounded-md bg-blue-500 hover:bg-blue-400 transition duration-300 ease-in-out">
+                                            <a href="/user/signin">Login</a>
+                                        </li>
+                                        <li class="p-2 mx-2 md:mx-4 rounded-md bg-blue-500 hover:bg-blue-400 transition duration-300 ease-in-out">
+                                            <a href="/user/signup">Sign</a>
+                                        </li>
+            
+                                        <% } %>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="right w-full">
+            
+                        <header class="bg-stone-500 body-font rounded-md mx-2">
+                            <div class=" mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                                <button id="show" class="p-4 ">
+                                    <i  class="fas fa-bars text-2xl"></i>
+                                </button>
+                                <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                                    <a class="mr-5 text-white hover:text-gray-900">New Blogs</a>
+                                    <a class="mr-5 text-white hover:text-gray-900">Comedy</a>
+                                    <a class="mr-5 text-white hover:text-gray-900">adventure</a>
+                                    <a class="mr-5 text-white  focus-within:text font-serif hover:text-gray-900">love</a>
+                                </nav>
+                                <% if (locals.user) { %>
+                                    <a
+                                    class="flex title-font font-medium flex-col items-center text-gray-900 mb-4 md:mb-0 overflow-auto ">
+                                    <img src="<%= user.profileImageURL %>" class="rounded-full h-12 w-12" alt="">
+                                    <span class="overflow-hidden">
+                                      <%= user.fullName %>
+                                    </span>
+                                </a>
+                                <% } %>
+                                
+            
+                            </div>
+            
+                        </header> -->
+                        <%- include('partials/sidebar.ejs') %>
+
+                        <!-- <section class="text-gray-600 body-font h-64 overflow-auto"> -->
+                          <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 ms-4">
+                            <a id="newPostBtn" href="/blog/newblog" class="text-white no-underline">
+                              New Post
+                            </a>
+                          </button>
+                          <div class=" px-5 py-24 mx-auto  ">
+                            <button class="bg-green-500 text-white px-4 py-2 rounded mt-4 ms-4">
+                              <a id="newPostBtn" href="/blog/newblog" class="text-white no-underline">
+                                New Post
+                              </a>
+                            </button>
+                            
+                            <div class="flex flex-wrap -m-4 h-24 " style="overflow-y: scroll; height:33rem;">
+                              <% if (blogs && Array.isArray(blogs)) { %>
+                              <% blogs.forEach(blog=> { %>
+                                <div class="p-4 md:w-1/3">
+                                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="<%= blog.coverImageURL %>"
+                                      alt="blog image">
+                                    <div class="p-6">
+                                      <div class="flex flex-row items-center w-auto">
+                                        <h1 class="tracking-widest text-xs title-font font-medium inline text-md mb-1 mr-2">
+                                          <%= blog.createdBy.fullName %>
+                                        </h1>
+                                        <img src="<%= blog.createdBy.profileImageURL %>" class="rounded-full h-12 w-12">
+                                      </div>
+                                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                                        <%= blog.title %>
+                                      </h1>
+                                      <p class="leading-relaxed mb-3">
+                                        <%= blog.body %>
+                                      </p>
+                                      <div class="flex items-center flex-wrap">
+                                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="/blog/<%= blog._id %>">Learn
+                                          More
+                                          <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                          </svg>
+                                        </a>
+                                        <span
+                                          class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                          </svg>1.2K
+                                        </span>
+                                        <span class="text-gray-400 inline-flex items-center leading-none text-sm" href="">
+                                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path
+                                              d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                            </path>
+                                          </svg>6
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <% }); %>
+                      
+                                <% } else { %>
+                                  <h1><%= blogs.error %></h1>
+                                  <% } %>
+                      
+                            </div>
+                            <nav  id="hamburger" class="hamburger relative flex flex-col w-64 rounded-md">
+                          </div>
+                          
+                        <!-- </section>
+                        <div class="flex flex-row h-screen fixed ms-2 mt-2">
+                        <div class="flex flex-row h-screen fixed">
+                        <%- include("partials/footer.ejs") %> -->
+                        <div class=" px-5 py-24 mx-auto h-64">
+    
+    
+                            <div class="flex flex-wrap -m-4 " style="overflow-y: scroll;">
+                              <% if (blogs && Array.isArray(blogs)) { %>
+                              <% blogs.forEach(blog=> { %>
+                                <div class="p-4 md:w-1/3">
+                                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg ">
+                                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="<%= blog.coverImageURL %>"
+                                      alt="blog image">
+                                    <div class="p-6">
+                                      <div class="flex flex-row items-center w-auto">
+                                        <h1 class="tracking-widest text-xs title-font font-medium inline text-md mb-1 mr-2">
+                                          <%= blog.createdBy.fullName %>
+                                        </h1>
+                                        <img src="<%= blog.createdBy.profileImageURL %>" class="rounded-full h-12 w-12">
+                                      </div>
+                                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+                                        <%= blog.title %>
+                                      </h1>
+                                      <p class="leading-relaxed mb-3">
+                                        <%= blog.body %>
+                                      </p>
+                                      <div class="flex items-center flex-wrap">
+                                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="/blog/<%= blog._id %>">Learn
+                                          More
+                                          <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                          </svg>
+                                        </a>
+                                        <span
+                                          class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                          </svg>1.2K
+                                        </span>
+                                        <span class="text-gray-400 inline-flex items-center leading-none text-sm" href="">
+                                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path
+                                              d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                            </path>
+                                          </svg>6
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                <% }); %>
+                        
+                                <% } else { %>
+                                  <h1><%= blogs.error %></h1>
+                                  <% } %>
+                        
+                            </div>
+                          </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function () {
+            $("#show").click(function () {
+               
+                 if ($("#hamburger").is(":visible")) {
+                    $("#show").html('<i class="fas fa-bars text-2xl"></i>');
+                }
+                else {
+                    $("#show").html('<i id="hamburger-hide" class="fas fa-times text-2xl"></i>');
+                } 
+                $("#hamburger").slideToggle(300);
+            });
+        });
+       
+    </script>
+    
+</body>
+
+
+</html> 
